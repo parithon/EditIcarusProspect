@@ -121,9 +121,6 @@ namespace EditIcarusProspect
 	#endregion
 
 	#region CharacterReader.cs
-	#endregion
-
-	#region CharacterReader.cs
 
 	internal static class CharacterReader
 	{
