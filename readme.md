@@ -19,7 +19,7 @@ You will need to have the .NET Runtime 8.0 x64 installed. You can find the lates
 **BACKUP YOUR SAVE FILE BEFORE USING THIS PROGRAM.** If something goes wrong, there is no way to recover your save unless you have a backup.
 
 ### Prerequisite
-You should have some familiarity with using command line programs or you may struggle to run this.
+You can now run the program without any parameters to use the interactive menu. Command line parameters are still supported for scripting and automation.
 
 ### Step 1: Locate your prospect save file
 The normal location for these files is:
@@ -43,7 +43,12 @@ When you modify a save file, Steam cloud will often end up undoing your changes 
 ### Step 4: Run EditIcarusProspect
 _Make sure the prospect is not currently loaded in your game or dedicated server before doing this step._
 
-Open a command prompt (cmd) wherever you downloaded EditIcarusProspect and run the following command to modify your prospect. Substitute your save file location and file name.
+Open a command prompt (cmd) wherever you downloaded EditIcarusProspect and either:
+
+- run `EditIcarusProspect` with no parameters to launch the interactive menu, or
+- run a command like the following to use the original scripted command line workflow.
+
+Substitute your save file location and file name.
 ```
 EditIcarusProspect -p friends %localappdata%\Icarus\Saved\PlayerData\[your steam id]\Prospects\[your prospect file name].json
 ```
