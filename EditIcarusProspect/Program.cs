@@ -724,7 +724,7 @@ namespace EditIcarusProspect
 		public bool RunCleanup { get; }
 
 		/// <summary>
-		/// A list of players to remove fromt he prospect
+		/// A list of players to remove from the prospect
 		/// </summary>
 		public IReadOnlyList<string>? PlayersToRemove { get; }
 
@@ -1283,7 +1283,7 @@ namespace EditIcarusProspect
 		/// Process/update a prospect
 		/// </summary>
 		/// <param name="prospect">The prospect to update</param>
-		/// <param name="options">Decsription of updates to perform</param>
+		/// <param name="options">Description of updates to perform</param>
 		/// <returns>True if the prospect has been modified as a result of this run, else false</returns>
 		public bool Run(ProspectSave prospect, ProgramOptions options)
 		{
@@ -2502,7 +2502,7 @@ namespace EditIcarusProspect
 		private static int Main(string[] args)
 		{
 			Logger? logger;
-			if (!TryCreateLoggger(out logger))
+			if (!TryCreateLogger(out logger))
 			{
 				Console.Error.WriteLine("No logger could be created. Program will exit.");
 				return OnExit(1);
@@ -2852,7 +2852,7 @@ namespace EditIcarusProspect
 			return success;
 		}
 
-		private static bool TryCreateLoggger([NotNullWhen(true)] out Logger? logger)
+		private static bool TryCreateLogger([NotNullWhen(true)] out Logger? logger)
 		{
 			logger = null;
 			try
